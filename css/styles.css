@@ -1,4 +1,169 @@
 /* ------------------------------------------------------------------------------------------------------------------
-
+BASE
 ------------------------------------------------------------------------------------------------------------------ */
 
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font: 1.8rem "Roboto", sans-serif;
+
+    color: #000;
+    background-color: #E6EDF1;
+
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p, a{
+    font: 400 1.8rem "Roboto", sans-serif;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+COMPONENTS
+------------------------------------------------------------------------------------------------------------------ */
+
+/* ------- Header ------- */
+
+header{
+    background-color: #fff;
+    border-top: solid 4px #E25254;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a{
+    border: dotted 3px #fff;
+    color: #474747;
+}
+
+nav a:hover{
+    border: dotted 3px #E25254;
+    color: #E25254;
+}
+
+/* ------- Section Héro ------- */
+
+.hero{
+    background: url(../images/hero.jpg) no-repeat center/cover;
+}
+
+/* ------- Section Produits ------- */
+
+.produits{
+    background-color: #ECF0F1;
+}
+
+.produits .conteneur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.produits article{
+    background-color: #fff;
+    padding: 30px;
+}
+
+h2{
+    font: bold 3.6rem "Josefin Sans", sans-serif;
+    color: #474747;
+
+    margin: 0;    
+    padding-top: 80px;
+}
+
+.produits .texttitre{
+    margin: 0 0 10px;
+}
+
+h3{
+    font: bold 2.2rem "Josefin Sans", sans-serif;
+    color: #E25254;
+    text-transform: uppercase;
+}
+
+/* ------- Section Conseils ------- */
+
+.conseils{
+    background: #E25254 url(../images/tuile.png);
+}
+
+.conseils .conteneur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.conseils article{
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.conseils h2{
+    color: #fff;
+
+}
+
+h3{
+    margin: 0; 
+}
+
+.conseils .texttitre{
+    margin: 10px 0 40px;
+}
+
+.conseils a{
+    color: #000;
+    display: flex;
+    align-self: flex-end;
+}
+
+/* ------- Footer ------- */
+
+footer{
+    background-color: #E25254;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    color: #fff;
+}

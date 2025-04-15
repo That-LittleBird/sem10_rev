@@ -87,7 +87,7 @@ nav a:hover{
     justify-content: flex-end;
 }
 
-.hero .placeholder{
+.hero .conteneur{
     background-color: rgba(226, 82, 84, 90%);
     color: #fff;
     display: flex;
@@ -96,6 +96,16 @@ nav a:hover{
     width: 600px;
     padding: 50px 30px 50px 30px;
     margin: 45px 0 45px;
+}
+
+h1{
+    font-size: 4.8rem;
+    margin: 0;
+    padding: 20px 0 20px;
+}
+
+.hero p{
+    margin: 0;
 }
 
 .hero a{
@@ -109,10 +119,6 @@ nav a:hover{
 .hero a:hover{
     background-color: #fff;
     color: #C0392B;
-}
-
-h1{
-    font-size: 4.8rem;
 }
 
 /* ------- Section Produits ------- */
@@ -138,8 +144,16 @@ h1{
     color: #fff;
 }
 
+.produits article:hover h3{
+    color: #fff;
+}
+
 .produits article h2:hover{
     color: #fff;
+}
+
+.produits .material-symbols-outlined{
+    font-size: 2.8rem;
 }
 
 h2{
@@ -202,6 +216,7 @@ h3{
 
 h3{
     margin: 0; 
+    padding-bottom: 20px;
 }
 
 .conseils .texttitre{
